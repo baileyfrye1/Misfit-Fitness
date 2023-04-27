@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #c21d1d;
+    --secondary-color: #3a3335;
+    --bg-light: #fffdf3;
+    --bg-dark: #3a3335;
+    --bg-medium: #4a4445;
+}
+
+.container {
+    height: 100%;
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.bg-light {
+    background: var(--bg-light);
+}
+
+.bg-dark {
+    background: var(--bg-dark);
+    color: #fff;
+}
+
+.bg-medium {
+    background: var(--bg-medium);
+    color: #fff;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.contact-btn {
+    padding: .75rem 1.5rem;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    width: 40%;
+    margin-inline: auto;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+}
+
+.contact-btn:hover {
+    background: #fff;
+    color: var(--secondary-color);
+}
+
+.section-title {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2rem;
+}
