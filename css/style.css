@@ -439,11 +439,8 @@ nav.sticky .navbar-logo a i {
 }
 
 .error {
+    margin-top: 1rem;
     color: red;
-}
-
-.error-border {
-    border-bottom: 1px solid red;
 }
 
 
