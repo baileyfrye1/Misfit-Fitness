@@ -7,6 +7,8 @@
 body {
     line-height: 1.5;
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 ul {
@@ -50,12 +52,13 @@ img {
     justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
+    padding-top: 6rem;
     z-index: 5;
 }
 
 .hero-content .btn {
     font-size: 1.3rem;
-    padding: 1rem 1.75rem;
+    padding: .75rem 1.5rem;
 }
 
 .hero-title {
@@ -110,13 +113,37 @@ nav.sticky .navbar-logo a i {
 
 .nav-links ul li a {
     display: inline-block;
+    position: relative;
     border-bottom: 2px transparent solid;
     padding-bottom: 0.3rem;
     transition: all 0.3s;
 }
 
 .nav-links ul li a:hover {
+    color: #fff;
+}
+
+
+/* .nav-links ul li a:hover {
     border-color: var(--primary-color);
+} */
+
+.nav-links ul li a::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform .3s ease;
+}
+
+.nav-links ul li a:hover::before {
+    transform: scaleX(1);
 }
 
 .navbar-logo a i {
@@ -132,6 +159,10 @@ nav.sticky .navbar-logo a i {
 
 
 /* Info Section */
+
+#info-block h2 {
+    font-weight: 300;
+}
 
 #info-block .section-title {
     text-align: center;
@@ -232,39 +263,6 @@ nav.sticky .navbar-logo a i {
     visibility: visible;
     transform: translateX(0);
 }
-
-
-/* #info-block .info-grid .info-section .info-item:nth-child(even) {
-    flex-direction: row-reverse;
-} */
-
-
-/* #info-block .info-grid .info-section .info-item .info-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-
-/* #info-block .info-grid .info-section:nth-child(even) {
-    border-left: solid 1px transparent;
-    border-right: solid 1px var(--secondary-color);
-} */
-
-
-/* .info-label:nth-child(even) {
-    text-align: center;
-    border-left: solid 1px var(--secondary-color);
-    padding-left: 2.4rem;
-    margin-left: 2rem;
-}
-
-.info-label-even {
-    text-align: center;
-    padding-right: 2.4rem;
-    border-right: solid 1px var(--secondary-color);
-    margin-right: 2rem;
-} */
 
 
 /* About Section */
@@ -374,6 +372,7 @@ nav.sticky .navbar-logo a i {
 
 .item-text {
     position: absolute;
+    margin-inline: auto;
     left: 0;
     bottom: 2.5rem;
     opacity: 0;
@@ -410,6 +409,7 @@ nav.sticky .navbar-logo a i {
     height: 100%;
     justify-content: space-between;
     align-items: center;
+    z-index: -5;
 }
 
 .contact-content form {
@@ -436,10 +436,6 @@ nav.sticky .navbar-logo a i {
 .contact-form input[id='phone'] {
     display: block;
     width: 93%;
-}
-
-button {
-    background: transparent;
 }
 
 .error {
