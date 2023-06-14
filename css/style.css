@@ -123,11 +123,6 @@ nav.sticky .navbar-logo a i {
     color: #fff;
 }
 
-
-/* .nav-links ul li a:hover {
-    border-color: var(--primary-color);
-} */
-
 .nav-links ul li a::before {
     content: '';
     position: absolute;
@@ -269,6 +264,7 @@ nav.sticky .navbar-logo a i {
 
 #about-block {
     background: url(../img/Stephanie\ 2.jpeg) no-repeat center center/cover;
+    background-attachment: fixed;
     height: 42rem;
     position: relative;
     color: #fff;
