@@ -157,12 +157,12 @@
             <div class="container">
                 <div class="contact-content">
                     <h2 class="section-title">Let's Get Started</h2>
-                    <form action="#" class="contact-form" method="post" data-netlify="true" novalidate name="contact">
+                    <form class="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate name="contact">
                         <input type="text" placeholder="First Name*" id="first">
                         <input type="text" placeholder="Last Name*" id="last">
                         <input type="text" placeholder="Phone Number" id="phone">
                         <input type="email" placeholder="Email*" id="email">
-                        <button class="contact-btn">Submit</button>
+                        <button class="contact-btn" type="submit">Submit</button>
                         <div class="error"></div>
                     </form>
                 </div>
