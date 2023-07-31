@@ -19,16 +19,29 @@
 
 .bg-light {
     background: var(--bg-light);
+    color: var(--dark);
 }
 
 .bg-dark {
     background: var(--bg-dark);
-    color: #fff;
+    color: var(--light);
 }
 
 .bg-medium {
     background: var(--bg-medium);
-    color: #fff;
+    color: var(--light);
+}
+
+.light {
+    color: var(--light);
+}
+
+.medium {
+    color: var(--medium);
+}
+
+.dark {
+    color: var(--dark);
 }
 
 .btn {
@@ -94,4 +107,8 @@
     font-family: 'Archivo Black', sans-serif;
     font-weight: 300;
     font-size: 2rem;
+}
+
+.highlight {
+    color: var(--primary-color);
 }

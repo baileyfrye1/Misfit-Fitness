@@ -84,7 +84,7 @@ nav {
     margin: auto;
     transition: all .6s;
     z-index: 1000;
-    padding: 0 10rem;
+    padding: 0 6rem;
 }
 
 nav.sticky {
@@ -268,7 +268,7 @@ nav.sticky .navbar-logo a i {
 #about-block {
     background: url(../img/Stephanie\ 2.jpeg) no-repeat center right/cover;
     background-attachment: fixed;
-    height: 42rem;
+    height: 33rem;
     position: relative;
     color: #fff;
 }
@@ -498,8 +498,8 @@ nav.sticky .navbar-logo a i {
 }
 
 .block-img {
-    height: 600px;
-    width: 450px;
+    height: 500px;
+    width: 350px;
     object-fit: contain;
 }
 
