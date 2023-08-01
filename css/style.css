@@ -62,8 +62,9 @@ img {
 }
 
 .hero-title {
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 7rem;
+    letter-spacing: 4px;
     /* margin: 5rem 0 1rem 0; */
     margin-bottom: 3rem;
 }
@@ -163,6 +164,7 @@ nav.sticky .navbar-logo a i {
 }
 
 #info-block .section-title {
+    font-weight: 500;
     text-align: center;
     margin: 1.5rem 0;
 }
@@ -298,10 +300,16 @@ nav.sticky .navbar-logo a i {
     margin-bottom: 3rem;
 }
 
+#about-block .section-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
 
 /* Services Section */
 
 #services-block .section-title {
+    font-weight: 500;
     text-align: center;
     margin: 1.5rem 0;
 }
@@ -360,7 +368,7 @@ nav.sticky .navbar-logo a i {
     overflow: hidden;
 }
 
-.item-image img {
+.item-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -499,8 +507,8 @@ nav.sticky .navbar-logo a i {
 
 .block-img {
     height: 500px;
-    width: 350px;
-    object-fit: contain;
+    width: 400px;
+    object-fit: cover;
 }
 
 .block-text {
