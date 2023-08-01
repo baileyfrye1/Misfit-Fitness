@@ -64,8 +64,6 @@ img {
 .hero-title {
     font-family: 'Open Sans', sans-serif;
     font-size: 7rem;
-    letter-spacing: 4px;
-    /* margin: 5rem 0 1rem 0; */
     margin-bottom: 3rem;
 }
 
@@ -296,13 +294,13 @@ nav.sticky .navbar-logo a i {
     z-index: 10;
 }
 
-#about-block .about-items p {
-    margin-bottom: 3rem;
+#about-block .section-title {
+    font-weight: 500;
+    margin-bottom: 1rem;
 }
 
-#about-block .section-title {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+#about-block .about-items p {
+    margin-bottom: 3rem;
 }
 
 
@@ -368,7 +366,7 @@ nav.sticky .navbar-logo a i {
     overflow: hidden;
 }
 
-.item-image {
+.item-image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -506,9 +504,9 @@ nav.sticky .navbar-logo a i {
 }
 
 .block-img {
-    height: 600px;
-    width: 450px;
-    object-fit: contain;
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
 }
 
 .block-text {
