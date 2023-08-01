@@ -506,9 +506,9 @@ nav.sticky .navbar-logo a i {
 }
 
 .block-img {
-    height: 500px;
-    width: 400px;
-    object-fit: cover;
+    height: 600px;
+    width: 450px;
+    object-fit: contain;
 }
 
 .block-text {
