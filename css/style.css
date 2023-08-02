@@ -63,6 +63,7 @@ img {
 
 .hero-title {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     font-size: 7rem;
     margin-bottom: 3rem;
 }
@@ -70,7 +71,7 @@ img {
 
 /* Nav */
 
-nav {
+.navbar {
     height: 5rem;
     display: flex;
     justify-content: space-between;
@@ -79,11 +80,9 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    /* max-width: 1200px; */
-    margin: auto;
     transition: all .6s;
     z-index: 1000;
-    padding: 0 6rem;
+    padding: 0 15rem;
 }
 
 nav.sticky {
@@ -268,7 +267,6 @@ nav.sticky .navbar-logo a i {
 #about-block {
     background: url(../img/Stephanie\ 2.jpeg) no-repeat center right/cover;
     background-attachment: fixed;
-    height: 33rem;
     position: relative;
     color: #fff;
 }
@@ -284,13 +282,13 @@ nav.sticky .navbar-logo a i {
 }
 
 #about-block .about-items {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     width: 45%;
-    top: 5rem;
+    margin: 5rem 0;
     z-index: 10;
 }
 
@@ -405,16 +403,13 @@ nav.sticky .navbar-logo a i {
 
 /* Contact Section */
 
-#contact-block {
-    height: 30rem;
-}
-
 .contact-content {
     display: flex;
     height: 100%;
     justify-content: space-between;
     align-items: center;
     z-index: -5;
+    margin: 5rem 2rem;
 }
 
 .contact-content form {
@@ -518,10 +513,106 @@ nav.sticky .navbar-logo a i {
 }
 
 
+/* Fitness Tips Page */
+
+.fitness-hero {
+    background: url(../img/pt.jpg) center center/cover;
+    height: 25rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+}
+
+.fitness-hero::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.fitness-hero .hero-title {
+    font-size: 4rem;
+}
+
+.fitness-hero .fitness-hero-content {
+    position: absolute;
+    z-index: 5;
+}
+
+
+/* About Page */
+
+.about-hero {
+    background: url(../img/pt.jpg) center center/cover;
+    height: 25rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+}
+
+.about-hero::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.about-hero .hero-title {
+    font-size: 4rem;
+}
+
+.about-hero .about-hero-content {
+    position: absolute;
+    z-index: 5;
+}
+
+
+/* Contact Page */
+
+.contact-hero {
+    background: url(../img/pt.jpg) center center/cover;
+    height: 25rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+}
+
+.contact-hero::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.contact-hero .hero-title {
+    font-size: 4rem;
+}
+
+.contact-hero .contact-hero-content {
+    position: absolute;
+    z-index: 5;
+}
+
+
 /* Footer */
 
 footer {
-    height: 12rem;
+    padding: 3rem 0;
 }
 
 footer .container {
@@ -531,7 +622,7 @@ footer .container {
 }
 
 .separator {
-    height: 75%;
+    height: 8rem;
     width: 1px;
     background: #fff;
 }
@@ -559,4 +650,13 @@ footer .container .footer-socials a:hover {
 
 footer .container .footer-socials i {
     margin-bottom: .4rem;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1000px) {
+    #about-block .about-items {
+        width: 100%;
+    }
 }
