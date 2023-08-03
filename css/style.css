@@ -413,13 +413,9 @@
         margin: 5rem 2rem;
     }
     
-    .contact-content form {
-        text-align: center;
-    }
-    
     .contact-form {
-        width: 50%;
-        /* max-width: 50%; */
+        width: 40%;
+        text-align: center;
     }
     
     .contact-form input {
@@ -427,10 +423,30 @@
         outline: none;
         border-bottom: 1px solid #fff;
         background: inherit;
-        padding: 10px;
-        margin: 0 2rem 2rem 0;
-        color: #fff;
+        padding: 1rem;
+        color: var(--light);
         transition: border-bottom .3s;
+    }
+    
+    .names {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+    }
+    
+    .input-box {
+        margin-bottom: 2rem;
+    }
+    
+    .input-box.name {
+        width: 50%;
+    }
+    
+    #first,
+    #last {
+        width: 100%;
     }
     
     .contact-form input:focus {
@@ -438,16 +454,10 @@
         caret-color: #fff;
     }
     
-    .contact-form input[id='first'],
-    .contact-form input[id='last'] {
-        width: 39.8%;
-        margin-inline: auto;
-    }
-    
     .contact-form input[type='email'],
     .contact-form input[id='phone'] {
         display: block;
-        width: 80%;
+        width: 100%;
         margin-inline: auto;
     }
     
@@ -677,14 +687,6 @@
         .contact-content .section-title {
             margin-bottom: 3rem;
         }
-        .contact-form input[id='first'],
-        .contact-form input[id='last'],
-        .contact-form input[type='email'],
-        .contact-form input[id='phone'] {
-            display: block;
-            width: 100%;
-            margin-inline: auto;
-        }
     }
     
     @media (max-width: 768px) {
@@ -708,6 +710,17 @@
         }
         .nav-active {
             transform: translateX(0);
+        }
+        .contact-form {
+            width: 100%;
+        }
+        .names {
+            flex-direction: column;
+            width: 100%;
+            gap: 0;
+        }
+        .input-box.name {
+            width: 100%;
         }
     }
     
