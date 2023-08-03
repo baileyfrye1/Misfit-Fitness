@@ -11,7 +11,7 @@
 
 .container {
     height: 100%;
-    max-width: 1280px;
+    width: min(1280px, 100% - 6rem);
     padding: 0 1.5rem;
     margin: auto;
     overflow: hidden;
