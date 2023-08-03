@@ -562,6 +562,39 @@
         position: absolute;
         z-index: 5;
     }
+    
+    .fitness-title {
+        padding: 1.5rem;
+    }
+    
+    .fitness-title .section-title {
+        font-size: clamp(1.6rem, 4vw, 2rem);
+    }
+    
+    .fitness-block {
+        border-bottom: 1px dotted var(--primary-color);
+        padding: 1rem 0;
+    }
+    
+    .fitness-block:last-child {
+        border-bottom: none;
+    }
+    
+    .fitness-block .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .column-1 {
+        margin-right: 2rem;
+    }
+    
+    .fitness-img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
     /* About Page */
     
     .about-hero {
@@ -710,6 +743,12 @@
         }
         .nav-active {
             transform: translateX(0);
+        }
+        .fitness-block .container {
+            flex-direction: column;
+        }
+        .fitness-img {
+            margin-top: 2rem;
         }
         .contact-form {
             width: 100%;

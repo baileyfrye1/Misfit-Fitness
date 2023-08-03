@@ -107,6 +107,19 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 2rem;
+    text-align: center;
+}
+
+.section-header {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.fitness-text {
+    margin-top: 1rem;
+    font-size: 1.1rem;
 }
 
 .highlight {
