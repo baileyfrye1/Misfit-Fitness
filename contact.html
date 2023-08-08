@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/995a2a9551.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="script.js" defer></script>
+    <script src="js/script.js" defer></script>
     <title>Contact</title>
 </head>
 
@@ -41,6 +41,36 @@
         <section class="contact-hero">
             <div class="contact-hero-content">
                 <h1 class="hero-title">Contact Me</h1>
+            </div>
+        </section>
+
+        <!-- Contact Body -->
+        <section id="contact" class="bg-light">
+            <div class="container">
+                <div class="contact-text">
+                    <h2 class="section-header">Let's Work Together</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, debitis.</p>
+                </div>
+                <div class="contact-card">
+                    <form class="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate name="contact">
+                        <div class="names">
+                            <div class="input-box name">
+                                <input type="text" placeholder="First Name*" id="first" name="name">
+                            </div>
+                            <div class="input-box name">
+                                <input type="text" placeholder="Last Name*" id="last" name="name">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Phone Number" id="phone" name="phone">
+                        </div>
+                        <div class="input-box">
+                            <input type="email" placeholder="Email*" id="email" name="email">
+                        </div>
+                        <button class="contact-btn" type="submit">Submit</button>
+                        <div class="error"></div>
+                    </form>
+                </div>
             </div>
         </section>
 

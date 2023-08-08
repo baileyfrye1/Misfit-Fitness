@@ -27,6 +27,12 @@
     img {
         width: 100%;
     }
+    
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus {
+        box-shadow: 0 0 0 1000px #6a6665 inset;
+        -webkit-text-fill-color: var(--light);
+    }
     /* -------------------- */
     /*        Hero          */
     /* -------------------- */
@@ -708,6 +714,67 @@
         .contact-hero-content {
             position: absolute;
             z-index: 5;
+        }
+    }
+    
+    #contact {
+        padding: 3rem;
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .contact-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-form {
+            width: 100%;
+            text-align: center;
+            & input {
+                border-radius: 100px;
+                background: #6a6665;
+                padding: 1rem;
+                color: var(--light);
+            }
+            & input:focus,
+            & input[type='email'],
+            & input[id='phone']:focus {
+                border: none;
+                caret-color: var(--light);
+            }
+        }
+        .contact-btn {
+            position: relative;
+            padding: .75rem 2rem;
+            border: 1px solid var(--secondary-color);
+            background: transparent;
+            color: var(--secondary-color);
+            font-size: 1.05rem;
+            margin-inline: auto;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 0;
+            &:hover {
+                color: var(--light);
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                top: 100%;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: var(--secondary-color);
+                transition: all .3s ease;
+                z-index: -1;
+            }
+            &:hover::before {
+                top: 0;
+            }
         }
     }
     /* -------------------- */
