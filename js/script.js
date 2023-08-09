@@ -114,7 +114,6 @@ const phoneFormat = () => {
     const phoneNumberFormatter = () => {
         const phone = document.querySelector('#phone');
         const formattedInputValue = formatPhoneNumber(phone.value);
-        console.log(phone.value);
         phone.value = formattedInputValue;
     }
     phone.addEventListener('input', phoneNumberFormatter);

@@ -15,9 +15,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
     <script src="js/lightbox-plus-jquery.js"></script>
     <script src="https://kit.fontawesome.com/995a2a9551.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/wow.js"></script>
     <script src="js/script.js" defer></script>
     <title>About</title>
 </head>
@@ -106,8 +108,8 @@
         <section id="contact-block" class="bg-medium">
             <div class="container">
                 <div class="contact-content">
-                    <h2 class="section-title">Let's Get Started</h2>
-                    <form class="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate name="contact">
+                    <h2 class="section-title wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Let's Get Started</h2>
+                    <form class="contact-form wow fadeInRight" data-wow-delay=".5s" data-wow-duration="1s" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate name="contact">
                         <div class="names">
                             <div class="input-box name">
                                 <input type="text" placeholder="First Name*" id="first" name="name">
@@ -153,6 +155,10 @@
             </div>
         </footer>
     </main>
+    <!-- Initialize wow.js -->
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
