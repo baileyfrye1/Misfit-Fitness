@@ -437,9 +437,10 @@
     }
     
     .contact-form input {
-        border: none;
         outline: none;
+        border: none;
         border-bottom: 1px solid #fff;
+        border-radius: 0;
         background: inherit;
         padding: 1rem;
         color: var(--light);
