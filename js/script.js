@@ -4,6 +4,7 @@ const app = () => {
     navSlide();
     infoIcon();
     formVal();
+    phoneFormat();
     swiperFunc();
 };
 
@@ -62,7 +63,6 @@ const formVal = () => {
     const form = document.querySelector('form');
     const firstName = document.querySelector('#first');
     const lastName = document.querySelector('#last');
-    const phone = document.querySelector('#phone').value;
     const email = document.querySelector('#email');
     const error = document.querySelector('.error');
     let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
@@ -97,6 +97,26 @@ const formVal = () => {
             error.innerText = messages.join(', ')
         }
     });
+}
+
+// Phone Number Formatting
+const phoneFormat = () => {
+    const formatPhoneNumber = (value) => {
+        if (!value) return value;
+        const phoneNumber = value.replace(/[^\d]/g, '');
+        const phoneNumberLength = phoneNumber.length;
+        if (phoneNumberLength < 4) return phoneNumber;
+        if (phoneNumberLength < 7) {
+            return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;
+        }
+        return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, 9)}`;
+    }
+    const phoneNumberFormatter = () => {
+        const phone = document.querySelector('#phone');
+        const formattedInputValue = formatPhoneNumber(phone.value);
+        phone.value = formattedInputValue;
+    }
+    phone.addEventListener('keydown', phoneNumberFormatter);
 }
 
 // Carousel Controls
