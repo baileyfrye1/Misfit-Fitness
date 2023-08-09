@@ -109,14 +109,15 @@ const phoneFormat = () => {
         if (phoneNumberLength < 7) {
             return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;
         }
-        return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, 9)}`;
+        return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, 10)}`;
     }
     const phoneNumberFormatter = () => {
         const phone = document.querySelector('#phone');
         const formattedInputValue = formatPhoneNumber(phone.value);
+        console.log(phone.value);
         phone.value = formattedInputValue;
     }
-    phone.addEventListener('keydown', phoneNumberFormatter);
+    phone.addEventListener('input', phoneNumberFormatter);
 }
 
 // Carousel Controls
