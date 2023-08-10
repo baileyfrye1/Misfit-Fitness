@@ -760,6 +760,9 @@ input:-webkit-autofill:focus {
             background: #6a6665;
             padding: 1rem;
             color: var(--light);
+            &::placeholder {
+                color: #cccac2;
+            }
         }
         & input:focus,
         & input[type='email'],
@@ -922,8 +925,7 @@ footer .container .footer-socials i {
         align-items: flex-start;
         justify-content: flex-start;
         padding: min(30vh, 10rem) 2em;
-        background: rgba(58, 51, 53, 0.9);
-        backdrop-filter: blur(10px);
+        background: var(--secondary-color);
         transition: transform .5s ease-in-out;
         transform: translateX(100%);
     }
