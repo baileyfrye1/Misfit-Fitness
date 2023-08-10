@@ -943,7 +943,7 @@ footer .container .footer-socials i {
             justify-content: center;
             .hero-content {
                 text-align: center;
-                width: 100%;
+                width: 90%;
                 .hero-title {
                     font-size: clamp(3rem, 10vw, 7rem);
                 }
