@@ -45,7 +45,7 @@
 }
 
 .btn {
-    padding: 0.75rem 1.5rem;
+    padding: 0.75em 1.5em;
     position: relative;
     border: 2px solid var(--primary-color);
     transition: all 0.3s ease;
@@ -54,7 +54,7 @@
 
 .contact-btn {
     position: relative;
-    padding: .75rem 2rem;
+    padding: .75em 2em;
     border: 1px solid var(--light);
     background: transparent;
     color: var(--light);
@@ -101,6 +101,24 @@
 
 .contact-btn:hover::before {
     top: 0;
+}
+
+.swiper-buttons {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 1rem;
+    margin-inline: auto;
+    & i {
+        cursor: pointer;
+        border: 1px solid var(--light);
+        padding: .5rem 1rem;
+        transition: all .3s;
+        &:hover {
+            background: var(--light);
+            color: var(--secondary-color);
+        }
+    }
 }
 
 .section-title {

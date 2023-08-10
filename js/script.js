@@ -121,9 +121,8 @@ const phoneFormat = () => {
 
 // Carousel Controls
 const swiperFunc = () => {
-    let swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
         rewind: true,
         autoplay: {
             delay: 2500,
@@ -134,23 +133,36 @@ const swiperFunc = () => {
             clickable: true,
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".fa-chevron-right",
+            prevEl: ".fa-chevron-left",
         },
-        // breakpoints: {
-        //     640: {
-        //         slidesPerView: 1,
-        //         spaceBetween: 20,
-        //     },
-        //     768: {
-        //         slidesPerView: 1,
-        //         spaceBetween: 40,
-        //     },
-        //     1024: {
-        //         slidesPerView: 2,
-        //         spaceBetween: 50,
-        //     },
-        // },
+        breakpoints: {
+            800: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        },
+    });
+
+    const testimonialSlider = new Swiper('.testimonial-swiper', {
+        slidesPerView: 1,
+        rewind: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: false,
+        },
+        navigation: {
+            nextEl: '.fa-chevron-right',
+            prevEl: '.fa-chevron-left',
+        },
     });
 }
 
