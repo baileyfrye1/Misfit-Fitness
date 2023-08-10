@@ -18,6 +18,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     padding-left: constant(safe-area-inset-left);
+    height: -webkit-fill-available;
 }
 
 ul {
@@ -50,7 +51,7 @@ input:-webkit-autofill:focus {
 
 #hero {
     background: url(../img/Stephanie\ Test.jpeg) no-repeat center center/cover;
-    height: 100vh;
+    height: 100dvh;
     position: relative;
     color: var(--light);
     &:after {
@@ -71,6 +72,7 @@ input:-webkit-autofill:focus {
             position: absolute;
             text-align: left;
             z-index: 5;
+            width: 40%;
             .hero-title {
                 font-family: 'Open Sans', sans-serif;
                 font-weight: 400;
@@ -153,7 +155,7 @@ input:-webkit-autofill:focus {
 
 .primary-header.sticky {
     height: 4rem;
-    background: var(--secondary-color);
+    background: rgba(58, 51, 53, 0.9);
 }
 
 .navbar-logo a i {
@@ -435,6 +437,9 @@ input:-webkit-autofill:focus {
     align-items: center;
     z-index: -5;
     margin: 5rem 2rem;
+    .section-title {
+        font-weight: 500;
+    }
 }
 
 .contact-form {
@@ -917,7 +922,8 @@ footer .container .footer-socials i {
         align-items: flex-start;
         justify-content: flex-start;
         padding: min(30vh, 10rem) 2em;
-        background: var(--secondary-color);
+        background: rgba(58, 51, 53, 0.9);
+        backdrop-filter: blur(10px);
         transition: transform .5s ease-in-out;
         transform: translateX(100%);
     }
@@ -935,9 +941,9 @@ footer .container .footer-socials i {
             justify-content: center;
             .hero-content {
                 text-align: center;
+                width: 100%;
                 .hero-title {
                     font-size: clamp(3rem, 10vw, 7rem);
-                    margin-bottom: 2rem;
                 }
                 .btn {
                     font-size: 1rem;
