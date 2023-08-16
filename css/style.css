@@ -1,3 +1,7 @@
+@import url(utilities.css);
+@import url(typography.css);
+@import url(colors.css);
+
 /* -------------------- */
 
 
@@ -205,6 +209,7 @@ input:-webkit-autofill:focus {
         font-weight: 500;
         text-align: center;
         margin: 1.5rem 0;
+        font-size: clamp(var(--fs-small-700), 3vw, 2rem);
     }
     .info-grid {
         display: grid;
@@ -416,7 +421,7 @@ input:-webkit-autofill:focus {
 }
 
 .item-text-title {
-    font-size: 2rem;
+    font-size: clamp(var(--fs-small-700), 3vw, 2rem);
     padding: 0 1rem;
     margin: 5px 0 0 0;
 }
@@ -965,6 +970,9 @@ footer .container .footer-socials i {
                 font-size: .875rem;
             }
         }
+        .about-items .btn {
+            font-size: var(--fs-small-200);
+        }
     }
     .fitness-block .container {
         flex-direction: column;
@@ -993,6 +1001,14 @@ footer .container .footer-socials i {
             gap: 1rem;
             justify-content: center;
             align-items: center;
+            & h2 {
+                font-size: var(--fs-small-400);
+            }
+            & i {
+                padding: .725rem .3rem;
+                width: 55px;
+                height: 55px;
+            }
             .info-item {
                 flex-direction: column-reverse;
                 margin-bottom: 1rem;
@@ -1040,8 +1056,10 @@ footer .container .footer-socials i {
             }
         }
     }
-    .items {
-        grid-template-columns: 1fr;
+    #services-block {
+        .items {
+            grid-template-columns: 1fr;
+        }
     }
     #testimonials {
         display: flex;

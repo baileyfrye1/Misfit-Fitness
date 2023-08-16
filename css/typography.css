@@ -1,0 +1,59 @@
+/* --------------------------- */
+
+
+/* Declare font size variables */
+
+
+/* --------------------------- */
+
+:root {
+    --fs-large-900: 3.5rem;
+    --fs-large-800: 2.625rem;
+    --fs-small-900: 2.625rem;
+    --fs-small-800: 2.25rem;
+    --fs-small-700: 1.5rem;
+    --fs-small-400: 1.125rem;
+    --fs-small-300: 1rem;
+    --fs-small-200: 0.875rem;
+}
+
+
+/* ------------------- */
+
+
+/* Create font classes */
+
+
+/* ------------------- */
+
+.fs-large-900 {
+    font-size: var(--fs-large-900);
+}
+
+.fs-large-800 {
+    font-size: var(--fs-large-800);
+}
+
+.fs-small-900 {
+    font-size: var(--fs-small-900);
+}
+
+.fs-small-800 {
+    font-size: var(--fs-small-800);
+}
+
+.fs-small-700 {
+    font-size: var(--fs-small-700);
+}
+
+.fs-small-400 {
+    font-size: var(--fs-small-400);
+}
+
+.fs-small-300 {
+    font-size: var(--fs-small-300);
+}
+
+.fs-small-200 {
+    font-size: var(--fs-small-200);
+}

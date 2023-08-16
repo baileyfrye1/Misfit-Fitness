@@ -1,14 +1,3 @@
-:root {
-    --primary-color: #c21d1d;
-    --secondary-color: #3a3335;
-    --light: #fdfdfd;
-    --dark: #3a3335;
-    --medium: #4a4445;
-    --bg-light: #FFFDF3;
-    --bg-dark: #3a3335;
-    --bg-medium: #4a4445;
-}
-
 .container {
     height: 100%;
     width: min(1280px, 100% - 3rem);
@@ -124,7 +113,7 @@
 .section-title {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: clamp(var(--fs-small-700), 3vw, 2rem);
     text-align: center;
 }
 
