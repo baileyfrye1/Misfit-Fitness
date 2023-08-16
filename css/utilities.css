@@ -6,33 +6,6 @@
     overflow: hidden;
 }
 
-.bg-light {
-    background: var(--bg-light);
-    color: var(--dark);
-}
-
-.bg-dark {
-    background: var(--bg-dark);
-    color: var(--light);
-}
-
-.bg-medium {
-    background: var(--bg-medium);
-    color: var(--light);
-}
-
-.light {
-    color: var(--light);
-}
-
-.medium {
-    color: var(--medium);
-}
-
-.dark {
-    color: var(--dark);
-}
-
 .btn {
     padding: 0.75em 1.5em;
     position: relative;

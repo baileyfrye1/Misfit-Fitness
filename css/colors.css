@@ -1,10 +1,45 @@
 :root {
-    --primary-color: hsl(0, 75.2%, 46%);
-    --secondary-color: #3a3335;
-    --light: #fdfdfd;
     --dark: #3a3335;
     --medium: #4a4445;
+    --light: #fdfdfd;
+    --primary-color: hsl(0, 75.2%, 46%);
     --bg-light: #FFFDF3;
     --bg-dark: #3a3335;
     --bg-medium: #4a4445;
+}
+
+.bg-dark {
+    background: var(--bg-dark);
+    color: var(--light);
+}
+
+.bg-medium {
+    background: var(--bg-medium);
+    color: var(--light);
+}
+
+.bg-light {
+    background: var(--bg-light);
+    color: var(--dark);
+}
+
+.bg-primary {
+    background: var(--primary-color);
+    color: var(--dark);
+}
+
+.clr-dark {
+    color: var(--dark);
+}
+
+.clr-medium {
+    color: var(--medium);
+}
+
+.clr-light {
+    color: var(--light);
+}
+
+.clr-primary {
+    color: var(--primary-color);
 }
