@@ -45,7 +45,7 @@
 }
 
 .contact-btn:hover {
-    color: var(--secondary-color);
+    color: var(--dark);
 }
 
 .contact-btn::before {
@@ -78,7 +78,7 @@
         transition: all .3s;
         &:hover {
             background: var(--light);
-            color: var(--secondary-color);
+            color: var(--dark);
         }
     }
 }
