@@ -149,7 +149,7 @@ input:-webkit-autofill:focus {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: var(--primary-color);
+    background-color: var(--brand-clr-400);
     transform: scaleX(0);
     transform-origin: top left;
     transition: transform .3s ease;
@@ -172,7 +172,7 @@ input:-webkit-autofill:focus {
     padding: .8rem .5rem;
     height: 57.17px;
     width: 57.17px;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--brand-clr-400);
     border-radius: 50%;
     text-align: center;
     margin-bottom: .2rem;
@@ -223,14 +223,14 @@ input:-webkit-autofill:focus {
             padding: 1.1rem .8rem;
             width: 67.59px;
             height: 67.59px;
-            border: 1px solid var(--primary-color);
+            border: 1px solid var(--brand-clr-400);
             border-radius: 50%;
             text-align: center;
             margin-bottom: .2rem;
             transition: all .3s ease-in-out;
             &:hover {
                 color: #fff;
-                background-color: var(--primary-color);
+                background-color: var(--brand-clr-400);
                 cursor: pointer;
             }
         }
@@ -242,7 +242,7 @@ input:-webkit-autofill:focus {
             .info-label {
                 padding-left: 2rem;
                 margin-left: 2rem;
-                border-left: 1px solid var(--dark);
+                border-left: 1px solid var(--dark-700);
                 text-align: center;
             }
             .info-text {
@@ -263,7 +263,7 @@ input:-webkit-autofill:focus {
                 margin: 0 2rem 0 0;
                 padding: 0 2rem 0 0;
                 border-left: 0;
-                border-right: 1px solid var(--dark);
+                border-right: 1px solid var(--dark-700);
                 text-align: center;
             }
             .info-text {
@@ -314,12 +314,12 @@ input:-webkit-autofill:focus {
         margin: 5rem 0;
         z-index: 10;
         & .about-text {
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
     }
     .section-title {
         font-weight: 500;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -347,7 +347,7 @@ input:-webkit-autofill:focus {
 
 .item {
     position: relative;
-    background: var(--dark);
+    background: var(--dark-700);
     overflow: hidden;
 }
 
@@ -488,7 +488,7 @@ input:-webkit-autofill:focus {
 }
 
 .contact-form input:focus {
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--brand-clr-400);
     caret-color: #fff;
 }
 
@@ -521,27 +521,37 @@ input:-webkit-autofill:focus {
         align-items: center;
         justify-content: space-between;
     }
-    .block {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 3rem;
+    .service-item {
+        &:not(:first-child) {
+            padding-top: 2.5rem;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 3rem;
+            gap: 2rem;
+        }
     }
-    .block:nth-child(2) {
-        flex-direction: row-reverse;
+    .service-item:nth-child(2) {
+        /* background-color: var(--brand-clr-400); */
+        .container {
+            flex-direction: row-reverse;
+        }
     }
-    .block:nth-child(3) {
+    .service-item:nth-child(3) .container {
         margin-bottom: 0;
     }
-    .block-img {
+    .service-img {
         height: 500px;
         width: 400px;
         object-fit: cover;
     }
-    .block-text {
+    .service-text {
         width: 60%;
         .section-title {
             margin-bottom: 1.5rem;
+            font-weight: 500;
         }
     }
 }
@@ -611,7 +621,7 @@ input:-webkit-autofill:focus {
 }
 
 .fitness-block {
-    border-bottom: 1px dotted var(--primary-color);
+    border-bottom: 1px dotted var(--brand-clr-400);
     padding: 1rem 0;
     &:last-child {
         border-bottom: none;
@@ -795,9 +805,9 @@ input:-webkit-autofill:focus {
     .contact-btn {
         position: relative;
         padding: .75rem 2rem;
-        border: 1px solid var(--dark);
+        border: 1px solid var(--dark-700);
         background: transparent;
-        color: var(--dark);
+        color: var(--dark-700);
         font-size: 1.05rem;
         margin-inline: auto;
         cursor: pointer;
@@ -814,7 +824,7 @@ input:-webkit-autofill:focus {
             right: 0;
             bottom: 0;
             left: 0;
-            background: var(--dark);
+            background: var(--dark-700);
             transition: all .3s ease;
             z-index: -1;
         }
@@ -852,6 +862,7 @@ input:-webkit-autofill:focus {
         }
         .testimonial-author {
             align-self: flex-end;
+            font-size: var(--fs-small-300);
         }
     }
 }
@@ -885,7 +896,7 @@ footer {
 }
 
 .footer-links ul li a:hover {
-    color: var(--primary-color);
+    color: var(--brand-clr-400);
 }
 
 footer .container .footer-socials {
@@ -898,7 +909,7 @@ footer .container .footer-socials a {
 }
 
 footer .container .footer-socials a:hover {
-    color: var(--primary-color);
+    color: var(--brand-clr-400);
 }
 
 footer .container .footer-socials i {
@@ -958,7 +969,7 @@ footer .container .footer-socials i {
         align-items: flex-start;
         justify-content: flex-start;
         padding: min(30vh, 10rem) 2em;
-        background: var(--dark);
+        background: var(--dark-700);
         transition: transform .5s ease-in-out;
         transform: translateX(100%);
     }
@@ -1020,6 +1031,36 @@ footer .container .footer-socials i {
     .input-box.name {
         width: 100%;
     }
+    #services {
+        .service-body {
+            margin: 2.5rem 0;
+            /* padding-inline: 2rem; */
+            .service-item {
+                .container {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    margin-bottom: 3rem;
+                    gap: 2rem;
+                }
+            }
+            .service-item:nth-child(2) .container {
+                flex-direction: column-reverse;
+            }
+            .service-item:nth-child(3) .container {
+                margin-bottom: 0;
+            }
+            .service-img {
+                height: 400px;
+                width: 300px;
+            }
+            .service-text {
+                width: 80%;
+                .section-title {
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
     /* Contact Page */
     #contact {
         padding: 3rem;
@@ -1055,7 +1096,7 @@ footer .container .footer-socials i {
                     margin: 0 0 1rem 0;
                     padding: 0 2rem .5rem 2rem;
                     border-left: 0;
-                    border-bottom: 1px solid var(--dark);
+                    border-bottom: 1px solid var(--dark-700);
                     text-align: center;
                 }
                 .info-text {
@@ -1078,7 +1119,7 @@ footer .container .footer-socials i {
                     padding: 0 2rem .5rem 2rem;
                     border-left: 0;
                     border-right: 0;
-                    border-bottom: 1px solid var(--dark);
+                    border-bottom: 1px solid var(--dark-700);
                     text-align: center;
                 }
                 .info-text {

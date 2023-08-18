@@ -1,39 +1,80 @@
 :root {
-    --dark: #3a3335;
-    --medium: #4a4445;
-    --light: #fdfdfd;
-    --primary-color: hsl(0, 75.2%, 46%);
+    --dark-700: hsl(343, 6%, 21%);
+    --dark-500: hsl(350, 4%, 28%);
+    --dark-300: hsl(12, 2%, 41%);
+    --light: hsl(0, 0%, 99%);
+    /* Brand Colors */
+    --brand-clr-500: hsl(0, 75%, 30%);
+    --brand-clr-400: hsl(0, 75%, 40%);
+    --brand-clr-300: hsl(0, 85%, 55%);
+    --brand-clr-200: hsl(0, 85%, 70%);
+    /* Accent Colors */
+    --accent-clr-700: hsl(231, 23%, 20%);
+    --accent-clr-500: hsl(216, 68%, 27%);
+    --accent-clr-400: hsl(231, 23%, 60%);
+    --accent-clr-300: hsl(231, 23%, 68%);
+    --accent-clr-200: hsl(231, 23%, 80%);
+    /* Background Colors */
     --bg-light: #FFFDF3;
-    --bg-dark: #3a3335;
-    --bg-medium: #4a4445;
+    --bg-dark: var(--dark-700);
+    --bg-medium: var(--dark-500);
+    /* Test Colors */
+    --test-1: hsl(183, 100%, 17%);
+    --test-2: hsl(183, 45%, 54%);
 }
 
 .bg-dark {
-    background: var(--bg-dark);
+    background: var(--dark-700);
     color: var(--light);
 }
 
 .bg-medium {
-    background: var(--bg-medium);
+    background: var(--dark-500);
     color: var(--light);
 }
 
 .bg-light {
     background: var(--bg-light);
-    color: var(--dark);
+    color: var(--dark-700);
 }
 
-.bg-primary {
-    background: var(--primary-color);
-    color: var(--dark);
+
+/* Brand Background Colors */
+
+.bg-brand-400 {
+    background: var(--brand-clr-400);
+    color: var(--light);
+}
+
+.bg-brand-200 {
+    background: var(--brand-clr-200);
+    color: var(--light);
+}
+
+
+/* Accent Background Colors */
+
+.bg-accent-700 {
+    background: var(--accent-clr-700);
+    color: var(--light);
+}
+
+.bg-accent-500 {
+    background: var(--accent-clr-500);
+    color: var(--light);
+}
+
+.bg-accent-400 {
+    background: var(--accent-clr-400);
+    color: var(--light);
 }
 
 .clr-dark {
-    color: var(--dark);
+    color: var(--dark-700);
 }
 
 .clr-medium {
-    color: var(--medium);
+    color: var(--dark-500);
 }
 
 .clr-light {
@@ -41,5 +82,9 @@
 }
 
 .clr-primary {
-    color: var(--primary-color);
+    color: var(--brand-clr-400);
+}
+
+.clr-accent {
+    color: var(--accent-clr-400);
 }

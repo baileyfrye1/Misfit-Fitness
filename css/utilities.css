@@ -9,7 +9,7 @@
 .btn {
     padding: 0.75em 1.5em;
     position: relative;
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--brand-clr-400);
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -35,7 +35,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: var(--primary-color);
+    background-color: var(--brand-clr-400);
     transition: all .3s ease;
     z-index: -1;
 }
@@ -45,7 +45,7 @@
 }
 
 .contact-btn:hover {
-    color: var(--dark);
+    color: var(--dark-700);
 }
 
 .contact-btn::before {
@@ -78,7 +78,7 @@
         transition: all .3s;
         &:hover {
             background: var(--light);
-            color: var(--dark);
+            color: var(--dark-700);
         }
     }
 }
@@ -107,5 +107,5 @@
 }
 
 .highlight {
-    color: var(--primary-color);
+    color: var(--brand-clr-400);
 }
