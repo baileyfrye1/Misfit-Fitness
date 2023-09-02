@@ -10,110 +10,103 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/wow.js"></script>
     <script src="js/script.js" defer></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <title>Fitness Tips</title>
 </head>
 
 <body>
+    <div class="primary-header">
+        <div class="navbar-logo">
+            <a href="index.html"><i class="fa-solid fa-dumbbell fa-2x"></i></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="fitness.html">Fitness Tips</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+    <section class="fitness-hero">
+        <div class="fitness-hero-content">
+            <h1 class="hero-title">Fitness Tips</h1>
+        </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="fitness-title bg-brand-400">
+        <div class="container">
+            <h2 class="section-title">Achieve Your Best Self with Fitness Tips That Work</h2>
+        </div>
+    </section>
     <main>
-        <div class="primary-header">
-            <div class="navbar-logo">
-                <a href="index.html"><i class="fa-solid fa-dumbbell fa-2x"></i></a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="fitness.html">Fitness Tips</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </nav>
-        </div>
-        <section class="fitness-hero">
-            <div class="fitness-hero-content">
-                <h1 class="hero-title">Fitness Tips</h1>
-            </div>
-        </section>
-
-        <!-- Banner -->
-        <section class="fitness-title bg-medium">
-            <div class="container">
-                <h2 class="section-title">Fitness doesn’t just stop with [lifting weights], a healthy mind is just as a important as a healthy body</h2>
-            </div>
-        </section>
-
         <!-- Body -->
-        <div id="fitness-tips" class="bg-light">
-            <section class="fitness-block">
-                <div class="container">
-                    <div class="column-1">
-                        <h2 class="section-header">01</h2>
-                        <h2 class="section-header">Prioritize</h2>
-                        <p class="fitness-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus, quidem consequatur nemo sed exercitationem! Sapiente, aliquid? Quaerat rem ipsa autem, dolor soluta pariatur aspernatur aliquid! Placeat qui fugiat eos.
-                            Ab quaerat nisi quae iure nam dolore vel. Mollitia, harum.</p>
-                    </div>
-                    <div class="column-2">
-                        <img src="img/vt.jpg" alt="#" class="fitness-img">
-                    </div>
+        <section id="fitness-tips" class="bg-light">
+            <div class="container">
+                <div class="fitness-grid">
+                    <section class="fitness-card">
+                        <div class="lottie-container">
+                            <lottie-player src="https://lottie.host/5330129c-7fbd-44fe-ac0e-ed79e75b7065/CGil0oQJ2m.json" background="#55AFE7" speed="1" loop hover direction="1" mode="normal"></lottie-player>
+                        </div>
+                        <div class="fitness-card__text">
+                            <h2 class="section-header fitness-card__title">Prioritize</h2>
+                            <p class="fitness-card__body">In the pursuit of fitness, focus on what matters most to you. Prioritize your goals and dedicate your energy to achieving them. It's your journey, <strong class="highlight">make it count.</strong></p>
+                        </div>
+                    </section>
+                    <section class="fitness-card">
+                        <div class="lottie-container">
+                            <lottie-player src="https://lottie.host/9f110627-7282-42b7-8ebd-18c168b479f1/WSMTjpG31V.json" background="#fff" speed="1" loop hover direction="1" mode="normal" class="lottie-animation"></lottie-player>
+                        </div>
+                        <div class="fitness-card__text">
+                            <h2 class="section-header fitness-card__title">Get Moving</h2>
+                            <p class="fitness-card__body">Fitness begins with that first step, that first rep, that first stretch. The key is to keep moving forward. Embrace the power of movement to transform your body and mind.</p>
+                        </div>
+                    </section>
+                    <section class="fitness-card">
+                        <div class="lottie-container">
+                            <lottie-player src="https://lottie.host/89f6bbfe-fd92-4dda-bbc1-62b3b2dbaa01/NlZbdy0M6d.json" background="#E7B549" speed="1" loop hover direction="1" mode="normal" class="lottie-animation"></lottie-player>
+                        </div>
+                        <div class="fitness-card__text">
+                            <h2 class="section-header fitness-card__title">Check in With Yourself</h2>
+                            <p class="fitness-card__body">Regularly check in with yourself on your fitness journey. Reflect on your achievements, setbacks, and how far you've come. This self-awareness is the compass that guides your progress.</p>
+                        </div>
+                    </section>
+                    <section class="fitness-card">
+                        <div class="lottie-container">
+                            <lottie-player src="https://lottie.host/750ba0d4-bad0-4d46-a74c-ec669f2a3de3/tfYXlQzh0q.json" background="#24A8AF" speed="1" loop hover direction="1" mode="normal" class="lottie-animation"></lottie-player>
+                        </div>
+                        <div class="fitness-card__text">
+                            <h2 class="section-header fitness-card__title">Water, Water, Water!</h2>
+                            <p class="fitness-card__body">Hydration is the unsung hero of fitness. Sip on water throughout the day to fuel your workouts, boost energy, and support recovery. Your body will thank you!</p>
+                        </div>
+                    </section>
+                    <section class="fitness-card">
+                        <div class="lottie-container">
+                            <lottie-player src="https://lottie.host/8055b868-797c-48dd-a519-fc89199fbb88/3j1wbR5VT0.json" background="#6666FF" speed="1" loop hover direction="1" mode="normal"></lottie-player>
+                        </div>
+                        <div class="fitness-card__text">
+                            <h2 class="section-header fitness-card__title">Phone A Friend</h2>
+                            <p class="fitness-card__body">Don't go it alone! Sometimes, the best motivation comes from a workout buddy. Call up a friend, schedule a fitness date, and together, you'll conquer your fitness goals with twice the enthusiasm.</p>
+                        </div>
+                    </section>
+                    <section class="fitness-card">
+                        <div class="lottie-container">
+                            <lottie-player src="https://lottie.host/5e14de64-c2c2-4317-a7bf-440ed0634fa7/cxgw7QIrfw.json" background="#5aa640" speed="1" loop hover direction="1" mode="normal"></lottie-player>
+                        </div>
+                        <div class="fitness-card__text">
+                            <h2 class="section-header fitness-card__title">Stay Motivated</h2>
+                            <p class="fitness-card__body">Motivation is the driving force behind lasting fitness success. Celebrate your achievements, visualize your goals, and harness the power of determination. You've got this!</p>
+                        </div>
+                    </section>
                 </div>
-            </section>
-            <section class="fitness-block">
-                <div class="container">
-                    <div class="column-1">
-                        <h2 class="section-header">02</h2>
-                        <h2 class="section-header">Prioritize</h2>
-                        <p class="fitness-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rem fuga, distinctio corrupti soluta deleniti eaque vel maiores. Recusandae, ab. Adipisci vitae quia ratione doloribus earum eligendi corrupti modi obcaecati architecto
-                            voluptas! Dolore corrupti qui doloribus amet est rem minus.</p>
-                    </div>
-                    <div class="column-2">
-                        <img src="img/vt.jpg" alt="#" class="fitness-img">
-                    </div>
-                </div>
-            </section>
-            <section class="fitness-block">
-                <div class="container">
-                    <div class="column-1">
-                        <h2 class="section-header">03</h2>
-                        <h2 class="section-header">Prioritize</h2>
-                        <p class="fitness-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rem fuga, distinctio corrupti soluta deleniti eaque vel maiores. Recusandae, ab. Adipisci vitae quia ratione doloribus earum eligendi corrupti modi obcaecati architecto
-                            voluptas! Dolore corrupti qui doloribus amet est rem minus.</p>
-                    </div>
-                    <div class="column-2">
-                        <img src="img/vt.jpg" alt="#" class="fitness-img">
-                    </div>
-                </div>
-            </section>
-            <section class="fitness-block">
-                <div class="container">
-                    <div class="column-1">
-                        <h2 class="section-header">04</h2>
-                        <h2 class="section-header">Prioritize</h2>
-                        <p class="fitness-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rem fuga, distinctio corrupti soluta deleniti eaque vel maiores. Recusandae, ab. Adipisci vitae quia ratione doloribus earum eligendi corrupti modi obcaecati architecto
-                            voluptas! Dolore corrupti qui doloribus amet est rem minus.</p>
-                    </div>
-                    <div class="column-2">
-                        <img src="img/vt.jpg" alt="#" class="fitness-img">
-                    </div>
-                </div>
-            </section>
-            <section class="fitness-block">
-                <div class="container">
-                    <div class="column-1">
-                        <h2 class="section-header">05</h2>
-                        <h2 class="section-header">Prioritize</h2>
-                        <p class="fitness-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rem fuga, distinctio corrupti soluta deleniti eaque vel maiores. Recusandae, ab. Adipisci vitae quia ratione doloribus earum eligendi corrupti modi obcaecati architecto
-                            voluptas! Dolore corrupti qui doloribus amet est rem minus.</p>
-                    </div>
-                    <div class="column-2">
-                        <img src="img/vt.jpg" alt="#" class="fitness-img">
-                    </div>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
 
         <!-- Contact -->
         <section id="contact-block" class="bg-medium">
@@ -143,7 +136,7 @@
         </section>
 
         <!-- Footer -->
-        <footer class="bg-dark">
+        <footer>
             <div class="container">
                 <div class="footer-logo">
                     <img src="#" alt="">

@@ -9,8 +9,9 @@
     --brand-clr-300: hsl(0, 85%, 55%);
     --brand-clr-200: hsl(0, 85%, 70%);
     /* Accent Colors */
-    --accent-clr-700: hsl(231, 23%, 20%);
+    --accent-clr-700: hsl(231, 50%, 20%);
     --accent-clr-500: hsl(216, 68%, 27%);
+    --nav-clr: 216, 68%, 27%;
     --accent-clr-400: hsl(203, 29%, 49%);
     --accent-clr-300: hsl(231, 23%, 68%);
     --accent-clr-200: hsl(231, 23%, 80%);
@@ -18,9 +19,8 @@
     --bg-light: #FFFDF3;
     --bg-dark: var(--dark-700);
     --bg-medium: var(--dark-500);
-    /* Test Colors */
-    --test-1: hsl(183, 100%, 17%);
-    --test-2: hsl(183, 45%, 54%);
+    /* Gradient */
+    --accent-gradient: var(--accent-clr-700), var(--accent-clr-500), var(--accent-clr-400);
 }
 
 .bg-dark {
