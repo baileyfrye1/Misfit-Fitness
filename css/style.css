@@ -599,6 +599,7 @@ input:-webkit-autofill:focus {
             width: 60%;
             .section-title {
                 margin-bottom: 1.5rem;
+                font-weight: 700;
             }
         }
     }
