@@ -57,7 +57,6 @@ input:-webkit-autofill:focus {
 
 #hero {
     background: linear-gradient(150deg, var(--accent-gradient));
-    /* height: 100dvh; */
     padding-block: 10em;
     color: var(--light);
     .hero-content {
@@ -452,31 +451,6 @@ input:-webkit-autofill:focus {
     }
 }
 
-.service-hero {
-    background: url(../img/pt.jpg) center center/cover;
-    height: 25rem;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    color: var(--light);
-}
-
-.service-hero::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.4);
-}
-
-.service-hero .service-hero-content {
-    position: absolute;
-    z-index: 5;
-}
-
 
 /* -------------------- */
 
@@ -485,36 +459,6 @@ input:-webkit-autofill:focus {
 
 
 /* -------------------- */
-
-.fitness-hero {
-    background: url(../img/pt.jpg) center center/cover;
-    height: 25rem;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    color: var(--light);
-    &::after {
-        content: '';
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.4);
-    }
-    .fitness-hero-content {
-        position: absolute;
-        z-index: 5;
-    }
-}
-
-.fitness-title {
-    padding: 1.5rem;
-    .section-title {
-        font-size: clamp(1.4rem, 4vw, 2rem);
-    }
-}
 
 #fitness-tips {
     .fitness-grid {
@@ -553,34 +497,6 @@ input:-webkit-autofill:focus {
 
 /* -------------------- */
 
-.about-hero {
-    background: url(../img/pt.jpg) center center/cover;
-    height: 25rem;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    color: var(--light);
-}
-
-.about-hero::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.4);
-}
-
-.about-hero .about-hero-content {
-    position: absolute;
-    z-index: 5;
-}
-
-
-/* About Stephanie */
-
 #about {
     padding: 3rem 0;
     .about-body {
@@ -609,6 +525,8 @@ input:-webkit-autofill:focus {
 /* Carousel */
 
 #carousel {
+    /* background: linear-gradient(to right, var(--brand-clr-500), var(--brand-clr-400), var(--brand-clr-200)); */
+    /* color: var(--light); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -650,29 +568,6 @@ input:-webkit-autofill:focus {
 
 /* -------------------- */
 
-.contact-hero {
-    background: url(../img/pt.jpg) center center/cover;
-    height: 25rem;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    color: var(--light);
-    &::after {
-        content: '';
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.4);
-    }
-    .contact-hero-content {
-        position: absolute;
-        z-index: 5;
-    }
-}
-
 #contact {
     padding: 3rem;
     .container {
@@ -693,7 +588,7 @@ input:-webkit-autofill:focus {
         text-align: center;
         & input {
             border-radius: 100px;
-            background: #6a6665;
+            background: var(--accent-clr-400);
             padding: 1rem;
             color: var(--light);
             &::placeholder {
@@ -710,7 +605,7 @@ input:-webkit-autofill:focus {
     .contact-btn {
         position: relative;
         padding: .75rem 2rem;
-        border: 1px solid var(--dark-700);
+        border: 1px solid var(--brand-clr-400);
         background: transparent;
         color: var(--dark-700);
         font-size: 1.05rem;
@@ -729,7 +624,7 @@ input:-webkit-autofill:focus {
             right: 0;
             bottom: 0;
             left: 0;
-            background: var(--dark-700);
+            background: var(--brand-clr-400);
             transition: all .3s ease;
             z-index: -1;
         }
@@ -898,6 +793,9 @@ footer .container .footer-socials i {
             align-items: center;
             justify-content: center;
             margin-bottom: 0;
+            .about-img {
+                width: 100%;
+            }
             .about-text {
                 width: 100%;
             }
@@ -905,7 +803,7 @@ footer .container .footer-socials i {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .nav-links {
         position: fixed;
         gap: 2rem;
@@ -1013,6 +911,7 @@ footer .container .footer-socials i {
                 width: 80%;
                 .section-title {
                     margin-bottom: 1.5rem;
+                    text-align: left;
                 }
                 .service-p {
                     font-size: var(--fs-small-200);
