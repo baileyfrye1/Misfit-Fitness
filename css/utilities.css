@@ -130,6 +130,8 @@
 .subpage-hero {
     display: flex;
     max-height: 35rem;
+    background: var(--brand-clr-400);
+    color: var(--light);
     .content-col {
         padding: 10em 8em 10em 10em;
         flex-grow: 1;
@@ -140,7 +142,8 @@
             place-items: center;
             .section-title {
                 font-weight: 500;
-                font-size: 2rem;
+                font-size: 3rem;
+                width: max-content;
             }
         }
     }

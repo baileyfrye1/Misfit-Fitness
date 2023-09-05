@@ -2,7 +2,7 @@
 const app = () => {
     navScroll();
     navSlide();
-    infoIcon();
+    lottieTap();
     formVal();
     phoneFormat();
     swiperFunc();
@@ -42,19 +42,21 @@ const navSlide = () => {
     });
 }
 
-// Animate Info Icons
-const infoIcon = () => {
-    const info = document.querySelector('.info-grid');
-    const infoText = document.querySelectorAll('.info-text');
-    const infoLabel = document.querySelectorAll('.info-label');
-    const contactBtn = document.querySelector('.contact-btn');
-    for (let i = 0; i <= infoText.length - 1; i++) {
-        infoLabel[i].addEventListener('click', (e) => {
-            if (e.target.tagName === 'I') {
-                infoText[i].classList.toggle('show');
-            }
-        });
-    };
+// Animate Fitness Tips Animations on Tap
+const lottieTap = () => {
+    const animation = document.querySelectorAll('.lottie-animation');
+    const mediaQuery = window.matchMedia('(max-width: 800px)');
+
+    if (mediaQuery.matches) {
+        animation.forEach((lottie) => {
+            lottie.removeAttribute('hover');
+            lottie.removeAttribute('loop');
+            lottie.addEventListener('click', () => {
+                lottie.stop();
+                lottie.play();
+            })
+        })
+    }
 }
 
 // Form Validation

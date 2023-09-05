@@ -525,8 +525,7 @@ input:-webkit-autofill:focus {
 /* Carousel */
 
 #carousel {
-    /* background: linear-gradient(to right, var(--brand-clr-500), var(--brand-clr-400), var(--brand-clr-200)); */
-    /* color: var(--light); */
+    background: var(--brand-clr-400);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -534,6 +533,7 @@ input:-webkit-autofill:focus {
     padding: 4rem 0;
     .section-title {
         margin-bottom: 2rem;
+        font-weight: 500;
     }
     .swiper {
         width: 80%;
