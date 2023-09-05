@@ -132,6 +132,7 @@
     max-height: 35rem;
     .content-col {
         padding: 10em 8em 10em 10em;
+        flex-grow: 1;
         .content-col__text {
             height: 100%;
             margin-right: 2em;
@@ -146,6 +147,7 @@
     .subpage-hero__img {
         clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
         object-fit: fill;
+        height: 100%;
     }
 }
 
