@@ -73,9 +73,9 @@ const formVal = () => {
         firstName.style.borderBottom = '1px solid green'
     });
 
-    lastName.addEventListener('input', (e) => {
-        lastName.style.borderBottom = '1px solid green'
-    });
+    // lastName.addEventListener('input', (e) => {
+    //     lastName.style.borderBottom = '1px solid green'
+    // });
 
     email.addEventListener('input', (e) => {
         if (email.value.match(pattern)) {
