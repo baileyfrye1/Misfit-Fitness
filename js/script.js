@@ -64,7 +64,6 @@ const lottieTap = () => {
 const formVal = () => {
     const form = document.querySelector('form');
     const firstName = document.querySelector('#first');
-    const lastName = document.querySelector('#last');
     const email = document.querySelector('#email');
     const error = document.querySelector('.error');
     let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
@@ -72,10 +71,6 @@ const formVal = () => {
     firstName.addEventListener('input', (e) => {
         firstName.style.borderBottom = '1px solid green'
     });
-
-    // lastName.addEventListener('input', (e) => {
-    //     lastName.style.borderBottom = '1px solid green'
-    // });
 
     email.addEventListener('input', (e) => {
         if (email.value.match(pattern)) {
@@ -87,9 +82,7 @@ const formVal = () => {
         let messages = [];
 
         if (firstName.value === '' || firstName.value == null) {
-            messages.push('First name is required')
-        } else if (lastName.value === '' || lastName.value == null) {
-            messages.push('Last name is required')
+            messages.push('Name is required')
         } else if (!email.value.match(pattern)) {
             messages.push('Email is invalid')
         }
