@@ -69,15 +69,15 @@ const formVal = () => {
     const error = document.querySelector('.error');
     let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-    firstName.addEventListener('keydown', (e) => {
+    firstName.addEventListener('input', (e) => {
         firstName.style.borderBottom = '1px solid green'
     });
 
-    lastName.addEventListener('keydown', (e) => {
+    lastName.addEventListener('input', (e) => {
         lastName.style.borderBottom = '1px solid green'
     });
 
-    email.addEventListener('keydown', (e) => {
+    email.addEventListener('input', (e) => {
         if (email.value.match(pattern)) {
             email.style.borderBottom = '1px solid green'
         }
