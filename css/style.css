@@ -56,7 +56,7 @@ input:-webkit-autofill:focus {
 /* -------------------- */
 
 #hero {
-    background: linear-gradient(150deg, var(--accent-gradient));
+    background: linear-gradient(to top, var(--dark-gradient));
     padding-block: 10em;
     color: var(--light);
     .hero-content {
@@ -138,7 +138,7 @@ input:-webkit-autofill:focus {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: var(--brand-clr-400);
+    background-color: var(--accent-color-400);
     transform: scaleX(0);
     transform-origin: top left;
     transition: transform .3s ease;
@@ -150,7 +150,7 @@ input:-webkit-autofill:focus {
 
 .primary-header.sticky {
     height: 4rem;
-    background: hsla(var(--nav-clr), .8);
+    background: hsla(var(--nav-clr-dark), .8);
 }
 
 .navbar-logo a i {
@@ -161,7 +161,7 @@ input:-webkit-autofill:focus {
     padding: .8rem .5rem;
     height: 57.17px;
     width: 57.17px;
-    border: 1px solid var(--brand-clr-400);
+    border: 1px solid var(--accent-color-400);
     border-radius: 50%;
     text-align: center;
     margin-bottom: .2rem;
@@ -171,7 +171,6 @@ input:-webkit-autofill:focus {
 .burger {
     display: none;
     cursor: pointer;
-    /* margin: 3rem; */
 }
 
 .burger div {
@@ -229,7 +228,7 @@ input:-webkit-autofill:focus {
 /* -------------------- */
 
 #about-block {
-    background: url(../img/Stephanie\ 2.jpeg) no-repeat center right/cover;
+    background: url(https://res.cloudinary.com/dlieh2u8a/image/upload/v1692216097/Misfit%20Fitness/stephanie-about1.jpg) no-repeat center right/cover;
     background-attachment: fixed;
     position: relative;
     color: #fff;
@@ -289,7 +288,8 @@ input:-webkit-autofill:focus {
                 }
             }
             .card-text {
-                background: linear-gradient(to bottom, var(--accent-clr-700), var(--accent-clr-500), var(--accent-clr-400));
+                /* background: linear-gradient(to top, var(--dark-gradient)); */
+                background: var(--black-green);
                 color: var(--light);
                 padding: 1em 2em 2em 2em;
                 text-align: center;
@@ -326,7 +326,7 @@ input:-webkit-autofill:focus {
 /* -------------------- */
 
 #contact-block {
-    background: var(--accent-clr-500);
+    background: linear-gradient(to bottom, var(--dark-gradient));
     color: var(--light);
     padding: 5rem 2rem;
     .contact-content {
@@ -659,7 +659,7 @@ input:-webkit-autofill:focus {
 
 footer {
     padding: 3rem 0;
-    background: var(--accent-clr-700);
+    background: var(--black-green);
     color: var(--light);
     .container {
         display: flex;
@@ -679,7 +679,7 @@ footer {
 }
 
 .footer-links ul li a:hover {
-    color: var(--brand-clr-400);
+    color: var(--accent-color-400);
 }
 
 footer .container .footer-socials {
@@ -692,7 +692,7 @@ footer .container .footer-socials a {
 }
 
 footer .container .footer-socials a:hover {
-    color: var(--brand-clr-400);
+    color: var(--accent-color-400);
 }
 
 footer .container .footer-socials i {
@@ -791,7 +791,7 @@ footer .container .footer-socials i {
         align-items: flex-start;
         justify-content: flex-start;
         padding: min(30vh, 10rem) 2em;
-        background: linear-gradient(to bottom, var(--accent-gradient));
+        background: linear-gradient(to bottom, var(--dark-gradient));
         transition: transform .5s ease-in-out;
         transform: translateX(100%);
     }

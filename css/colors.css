@@ -1,4 +1,9 @@
 :root {
+    --black-900: hsl(0,0%,5%);
+    --black-700: hsl(0, 0%, 10%);
+    --black-500: #404040;
+    --black-gold: hsl(43, 16%, 26%);
+    --black-green: hsl(115, 10%, 26%);
     --dark-700: hsl(343, 6%, 21%);
     --dark-500: hsl(350, 4%, 28%);
     --dark-300: hsl(12, 2%, 41%);
@@ -6,30 +11,40 @@
     /* Brand Colors */
     --brand-clr-500: hsl(0, 75%, 30%);
     --brand-clr-400: hsl(0, 75%, 40%);
+    --brand-color-400: hsl(119, 19%, 42%);
     --brand-clr-300: hsl(0, 85%, 55%);
     --brand-clr-200: hsl(0, 85%, 70%);
     /* Accent Colors */
     --accent-clr-700: hsl(231, 50%, 20%);
     --accent-clr-500: hsl(216, 68%, 27%);
     --nav-clr: 216, 68%, 27%;
+    --nav-clr-dark: 115, 10%, 26%;
     --accent-clr-400: hsl(203, 29%, 49%);
     --accent-clr-300: hsl(231, 23%, 68%);
     --accent-clr-200: hsl(231, 23%, 80%);
+    --accent-color-400: hsl(47, 46%, 55%);
     /* Background Colors */
+    --bg-ex-dark: var(--black-700);
+    --bg-dark: var(--black-700);
+    --bg-medium: var(--black-500);
     --bg-light: #FFFDF3;
-    --bg-dark: var(--dark-700);
-    --bg-medium: var(--dark-500);
     /* Gradient */
     --accent-gradient: var(--accent-clr-700), var(--accent-clr-500), var(--accent-clr-400);
+    --dark-gradient: var(--black-900), var(--black-green);
+}
+
+.bg-ex-dark {
+    background: var(--black-900);
+    color: var(--light);
 }
 
 .bg-dark {
-    background: var(--dark-700);
+    background: var(--black-700);
     color: var(--light);
 }
 
 .bg-medium {
-    background: var(--dark-500);
+    background: var(--black-500);
     color: var(--light);
 }
 
