@@ -794,7 +794,7 @@ footer .container .footer-socials i {
         align-items: flex-start;
         justify-content: flex-start;
         padding: min(30vh, 10rem) 2em;
-        background: linear-gradient(to bottom, var(--dark-gradient));
+        background: var(--black-green);
         transition: transform .5s ease-in-out;
         transform: translateX(100%);
     }
