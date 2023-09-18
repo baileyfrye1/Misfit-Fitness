@@ -133,7 +133,7 @@
 .subpage-hero {
     display: flex;
     max-height: 35rem;
-    background: var(--brand-clr-400);
+    background: var(--black-green);
     color: var(--light);
     .content-col {
         padding: 10em 8em 10em 10em;

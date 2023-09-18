@@ -440,6 +440,8 @@ input:-webkit-autofill:focus {
 /* -------------------- */
 
 #fitness-tips {
+    background: radial-gradient(farthest-corner at 10px 10px, var(--black-green) 30%, var(--black-900) 60%);
+    color: var(--light);
     .fitness-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -478,6 +480,8 @@ input:-webkit-autofill:focus {
 
 #about {
     padding: 3rem 0;
+    background: radial-gradient(farthest-corner at 10px 10px, var(--black-green) 30%, var(--black-900) 60%);
+    color: var(--light);
     .about-body {
         display: flex;
         justify-content: space-between;
@@ -504,7 +508,6 @@ input:-webkit-autofill:focus {
 /* Carousel */
 
 #carousel {
-    background: var(--brand-clr-400);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -549,6 +552,8 @@ input:-webkit-autofill:focus {
 
 #contact {
     padding: 3rem;
+    background: radial-gradient(farthest-corner at 10px 10px, var(--black-green) 30%, var(--black-900) 60%);
+    color: var(--light);
     .container {
         display: flex;
         align-items: center;
@@ -568,8 +573,10 @@ input:-webkit-autofill:focus {
             width: 100%;
             text-align: center;
             & input {
+                border: none;
+                outline: none;
                 border-radius: 100px;
-                background: var(--accent-clr-400);
+                background: var(--black-500);
                 padding: 1rem;
                 color: var(--light);
                 &::placeholder {
@@ -587,16 +594,16 @@ input:-webkit-autofill:focus {
     .contact-btn {
         position: relative;
         padding: .75rem 2rem;
-        border: 1px solid var(--brand-clr-400);
+        border: 1px solid var(--accent-color-400);
         background: transparent;
-        color: var(--dark-700);
+        color: var(--light);
         font-size: 1.05rem;
         margin-inline: auto;
         cursor: pointer;
         transition: all 0.3s ease;
         z-index: 0;
         &:hover {
-            color: var(--light);
+            color: var(--black-900);
         }
         &::before {
             content: '';
@@ -606,7 +613,7 @@ input:-webkit-autofill:focus {
             right: 0;
             bottom: 0;
             left: 0;
-            background: var(--brand-clr-400);
+            background: var(--accent-color-400);
             transition: all .3s ease;
             z-index: -1;
         }
@@ -617,8 +624,6 @@ input:-webkit-autofill:focus {
 }
 
 #testimonials {
-    background: var(--accent-clr-500);
-    color: var(--light);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -769,6 +774,7 @@ footer .container .footer-socials i {
         margin-bottom: 3rem;
     }
     #about {
+        background: linear-gradient(var(--black-green), var(--black-900));
         padding-block: 2rem;
         .about-body {
             flex-direction: column;
