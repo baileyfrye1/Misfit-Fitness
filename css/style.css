@@ -388,8 +388,10 @@ input:-webkit-autofill:focus {
 /* -------------------- */
 
 #services {
+    background: radial-gradient(farthest-corner at 10px 10px, var(--black-green) 20%, var(--black-900) 50%);
+    color: var(--light);
     .service-body {
-        margin: 4.25rem 0;
+        padding: 4.25rem 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -552,7 +554,7 @@ input:-webkit-autofill:focus {
 
 #contact {
     padding: 3rem;
-    background: radial-gradient(farthest-corner at 10px 10px, var(--black-green) 30%, var(--black-900) 60%);
+    background: radial-gradient(farthest-corner at 10px 10px, var(--black-green) 30%, var(--black-900) 70%);
     color: var(--light);
     .container {
         display: flex;
@@ -773,6 +775,9 @@ footer .container .footer-socials i {
     .contact-content .section-title {
         margin-bottom: 3rem;
     }
+    #fitness-tips {
+        background: linear-gradient(var(--black-green), var(--black-900) 50%);
+    }
     #about {
         background: linear-gradient(var(--black-green), var(--black-900));
         padding-block: 2rem;
@@ -868,7 +873,8 @@ footer .container .footer-socials i {
     }
     #services {
         .service-body {
-            margin: 2.5rem 0;
+            background: linear-gradient(var(--black-green), var(--black-900) 50%);
+            padding: 2.5rem 0;
             .service-item {
                 .container {
                     flex-direction: column-reverse;
@@ -901,6 +907,7 @@ footer .container .footer-socials i {
     }
     /* Contact Page */
     #contact {
+        background: linear-gradient(var(--black-green), var(--black-900));
         padding: 3rem;
         .container {
             flex-direction: column;
