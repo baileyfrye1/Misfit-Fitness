@@ -504,6 +504,7 @@ input:-webkit-autofill:focus {
             .section-title {
                 margin-bottom: 1.5rem;
                 font-weight: 700;
+                text-align: left;
             }
         }
     }
