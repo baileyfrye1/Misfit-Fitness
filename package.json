@@ -9,6 +9,7 @@
     "url": "https://github.com/banthagroup/fslightbox/issues"
   },
   "main": "index.js",
+  "type": "module",
   "keywords": [
     "fslightbox",
     "vanilla javascript fslightbox",
@@ -36,6 +37,7 @@
     "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
-    "lightbox2": "^2.11.4"
+    "lightbox2": "^2.11.4",
+    "swiper": "^10.2.0"
   }
 }
