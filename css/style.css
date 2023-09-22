@@ -233,7 +233,7 @@ input:-webkit-autofill:focus {
     background-attachment: fixed;
     position: relative;
     color: #fff;
-    margin: 2em auto;
+    margin: 4em auto;
     border-radius: 20px;
     width: 80%;
     height: 100%;
