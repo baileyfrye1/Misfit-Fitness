@@ -146,10 +146,6 @@ const swiperFunc = () => {
     const testimonialSlider = new Swiper('.testimonial-swiper', {
         slidesPerView: 1,
         rewind: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
         pagination: {
             el: '.swiper-pagination',
             clickable: false,

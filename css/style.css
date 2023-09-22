@@ -294,7 +294,6 @@ input:-webkit-autofill:focus {
                 }
             }
             .card-text {
-                /* background: linear-gradient(to top, var(--dark-gradient)); */
                 background: var(--black-green);
                 color: var(--light);
                 padding: 1em 2em 2em 2em;
@@ -722,10 +721,22 @@ footer .container .footer-socials i {
 
 /* -------------------- */
 
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
     #about-block {
         background-attachment: scroll;
     }
+    #services-block {
+        .card-wrap {
+            .card {
+                .card-img {
+                    height: 45%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
     #about-block .about-items {
         width: 100%;
         padding: 0 2rem;
