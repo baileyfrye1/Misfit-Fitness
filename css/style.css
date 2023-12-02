@@ -654,10 +654,50 @@ input:-webkit-autofill:focus {
             align-self: flex-start;
             margin-bottom: .5rem;
         }
+        .testimonial--long {
+            display: -webkit-box; 
+            -webkit-box-orient: vertical; 
+            -webkit-line-clamp: 7; 
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
         .testimonial-author {
             align-self: flex-end;
             font-size: var(--fs-small-300);
         }
+    }
+}
+
+.modal {
+    inset: 0;
+    margin: auto;
+    padding: 2em;
+    max-width: 80ch;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .8);
+    &::backdrop {
+        background: rgba(0, 0, 0, .3);
+        backdrop-filter: blur(3px);
+    }
+    .close-modal {
+        font-size: 1.25rem;
+        align-self: flex-end;
+        cursor: pointer;
+        opacity: 60%;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .modal-text {
+        margin-block: 1.25rem;
     }
 }
 

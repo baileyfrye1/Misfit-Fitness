@@ -1,14 +1,3 @@
-// Function Run
-const app = () => {
-    navScroll();
-    navSlide();
-    lottieTap();
-    formVal();
-    phoneFormat();
-    swiperFunc();
-};
-
-
 // Animated Navbar
 const navScroll = () => {
     const navbar = document.querySelector('.primary-header');
@@ -156,6 +145,48 @@ const swiperFunc = () => {
         },
     });
 }
+
+// Modal Functionality
+const modalFunction = () => {
+    const testimonials = document.querySelectorAll('.swiper-slide');
+    const modal = document.querySelector('.modal');
+    const modalText = document.querySelector('.modal-text');
+    const modalAuthor = document.querySelector('.modal-author');
+    const closeModal = document.querySelector('.close-modal');
+
+    testimonials.forEach((testimonial) => {
+        if (testimonial.children[1].innerText.length >= 600) {
+            testimonial.children[1].classList.add('testimonial--long');
+        }
+        testimonial.addEventListener('click', (e) => {
+            if (e.target.classList[1] === 'testimonial--long') {
+                modalText.innerText = e.target.innerText; 
+                modalAuthor.innerText = e.target.parentElement.lastElementChild.innerText
+                modal.showModal();
+                modal.style.display = 'flex';
+            }
+        })
+
+        modal.addEventListener('click', (e) => {
+            if(e.target.classList[2] === 'close-modal') {
+                modal.close();
+                modal.style.display = 'none';
+            }
+        })
+    })
+
+}
+
+// Function Run
+const app = () => {
+    navScroll();
+    navSlide();
+    lottieTap();
+    formVal();
+    phoneFormat();
+    swiperFunc();
+    modalFunction();
+};
 
 // Execute Functions
 app();
