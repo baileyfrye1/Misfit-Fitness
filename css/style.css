@@ -286,8 +286,9 @@ input:-webkit-autofill:focus {
         margin-bottom: 2em;
         .card {
             border-radius: 20px;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
             .card-img {
-                height: 50%;
                 & img {
                     height: 100%;
                     border-radius: 20px 20px 0 0;
@@ -764,15 +765,6 @@ footer .container .footer-socials i {
 @media (max-width: 1180px) {
     #about-block {
         background-attachment: scroll;
-    }
-    #services-block {
-        .card-wrap {
-            .card {
-                .card-img {
-                    height: 45%;
-                }
-            }
-        }
     }
 }
 
