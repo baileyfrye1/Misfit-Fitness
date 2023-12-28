@@ -645,6 +645,9 @@ input:-webkit-autofill:focus {
         width: 50%;
         max-height: 400px;
     }
+    .swiper-wrapper {
+        align-items: center;
+    }
     .swiper-slide {
         font-size: 1.125rem;
         display: flex;
@@ -974,6 +977,11 @@ footer .container .footer-socials i {
             .hero-img {
                 display: none;
             }
+        }
+    }
+    .modal {
+        .modal-text {
+            font-size: .875rem;
         }
     }
     #testimonials {
