@@ -137,11 +137,12 @@ input:-webkit-autofill:focus {
   left: 0;
   background-color: var(--accent-color-400);
   transform: scaleX(0);
-  transform-origin: top left;
+  transform-origin: bottom right;
   transition: transform 0.3s ease;
 }
 
 .nav-links li a:hover::before {
+  transform-origin: bottom left;
   transform: scaleX(1);
 }
 
