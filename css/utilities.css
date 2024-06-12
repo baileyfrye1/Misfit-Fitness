@@ -1,186 +1,189 @@
 .container {
-    height: 100%;
-    width: min(1280px, 100% - 3rem);
-    padding-inline: 1.5rem;
-    margin-inline: auto;
-    overflow: hidden;
+  height: 100%;
+  width: min(1280px, 100% - 3rem);
+  padding-inline: 1.5rem;
+  margin-inline: auto;
+  overflow: hidden;
 }
 
 .card-wrap {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 2em;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2em;
 }
 
 .btn {
-    padding: 0.75em 1.5em;
-    display: inline-block;
-    position: relative;
-    border: 1px solid var(--accent-color-400);
-    font-weight: 400;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    z-index: 0;
+  padding: 0.75em 1.5em;
+  display: inline-block;
+  position: relative;
+  border: 1px solid var(--accent-color-400);
+  font-weight: 400;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: 0;
 }
 
 .btn::before {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 100%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: var(--accent-color-400);
-    border-radius: 2px;
-    transition: all .3s ease;
-    z-index: -1;
+  content: '';
+  position: absolute;
+  display: block;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent-color-400);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  z-index: -1;
 }
 
 .btn:hover::before {
-    top: 0;
+  top: 0;
 }
 .btn:hover {
-    color: var(--black-700);
+  color: var(--black-700);
 }
 
 .contact-btn {
-    padding: .75em 2em;
-    display: inline-block;
-    position: relative;
-    border: 1px solid var(--accent-color-400);
-    border-radius: 5px;
-    background: transparent;
-    color: var(--light);
-    font-size: 1.05rem;
-    margin-inline: auto;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    z-index: 0;
+  padding: 0.75em 2em;
+  display: inline-block;
+  position: relative;
+  border: 1px solid var(--accent-color-400);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--light);
+  font-size: 1.05rem;
+  margin-inline: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 0;
 }
 
 .contact-btn:hover {
-    color: var(--dark-700);
+  color: var(--dark-700);
 }
 
 .contact-btn::before {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 100%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: var(--accent-color-400);
-    border-radius: 2px;
-    transition: all .3s ease;
-    z-index: -1;
+  content: '';
+  position: absolute;
+  display: block;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--accent-color-400);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  z-index: -1;
 }
 
 .contact-btn:hover::before {
-    top: 0;
+  top: 0;
 }
 
 .swiper-buttons {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin-top: 1rem;
-    margin-inline: auto;
-    & i {
-        cursor: pointer;
-        border: 1px solid var(--light);
-        padding: .5rem 1rem;
-        transition: all .3s;
-        &:hover {
-            background: var(--light);
-            color: var(--dark-700);
-        }
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin-top: 1rem;
+  margin-inline: auto;
+  & i {
+    cursor: pointer;
+    border: 1px solid var(--light);
+    padding: 0.5rem 1rem;
+    transition: all 0.3s;
+    &:hover {
+      background: var(--light);
+      color: var(--dark-700);
     }
+  }
 }
 
 .section-title {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-size: clamp(var(--fs-small-700), 3vw, 2rem);
-    text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: clamp(var(--fs-small-700), 3vw, 2rem);
+  text-align: center;
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
 .section-header {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    font-size: 1.5rem;
-    margin-bottom: .5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .fitness-text {
-    margin-top: 1rem;
-    font-size: 1rem;
+  margin-top: 1rem;
+  font-size: 1rem;
 }
 
 .text-wrap {
-    display: block;
+  display: block;
 }
 
 .highlight {
-    color: var(--accent-color-400);
+  color: var(--accent-color-400);
 }
 
 .subpage-hero {
-    display: flex;
-    max-height: 35rem;
-    background: var(--black-green);
-    color: var(--light);
-    .content-col {
-        padding: 10em 8em 10em 10em;
-        flex-grow: 1;
-        .content-col__text {
-            height: 100%;
-            margin-right: 2em;
-            display: grid;
-            place-items: center;
-            .section-title {
-                font-weight: 500;
-                font-size: 3rem;
-                width: max-content;
-            }
-        }
+  display: flex;
+  max-height: 35rem;
+  background: var(--black-green);
+  color: var(--light);
+  .content-col {
+    padding: 10em 8em 10em 10em;
+    .content-col__text {
+      height: 100%;
+      margin-right: 2em;
+      display: grid;
+      place-items: center;
+      .section-title {
+        font-weight: 500;
+        font-size: 3rem;
+        width: max-content;
+      }
     }
-    .subpage-hero__img {
-        clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
-        object-fit: fill;
-        height: 100%;
-    }
+  }
+  .subpage-hero__img {
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+    object-fit: fill;
+    height: 100%;
+  }
+}
+
+.subpage-hero > * {
+  flex: 1;
 }
 
 @media (max-width: 900px) {
-    .card-wrap {
-        grid-auto-flow: row;
-        place-content: center;
-    }
+  .card-wrap {
+    grid-auto-flow: row;
+    place-content: center;
+  }
 }
 
 @media (max-width: 800px) {
-    .subpage-hero {
-        flex-direction: column-reverse;
-        .content-col {
-            padding: 3em;
-            .content-col__text {
-                margin-right: 0;
-                .section-title {
-                    font-size: 1.625rem;
-                }
-            }
+  .subpage-hero {
+    flex-direction: column-reverse;
+    .content-col {
+      padding: 3em;
+      .content-col__text {
+        margin-right: 0;
+        .section-title {
+          font-size: 1.625rem;
         }
-        .subpage-hero__img {
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-            height: 500px;
-            object-fit: cover;
-        }
+      }
     }
+    .subpage-hero__img {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+      height: 500px;
+      object-fit: cover;
+    }
+  }
 }
