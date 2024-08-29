@@ -1,0 +1,22 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://www.misfitfitness.net</loc>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc>https://www.misfitfitness.net/services</loc>
+		<priority>0.75</priority>
+	</url>
+	<url>
+		<loc>https://www.misfitfitness.net/fitness</loc>
+		<priority>0.75</priority>
+	</url>
+	<url>
+		<loc>https://www.misfitfitness.net/about</loc>
+		<priority>0.75</priority>
+	</url>
+	<url>
+		<loc>https://www.misfitfitness.net/contact</loc>
+		<priority>0.75</priority>
+	</url>
+</urlset>
