@@ -1,21 +1,21 @@
 // Animated Navbar
 const navScroll = () => {
-  const navbar = document.querySelector('.primary-header');
+  const navbar = document.querySelector(".primary-header");
 
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('sticky', window.scrollY > 0);
+  window.addEventListener("scroll", () => {
+    navbar.classList.toggle("sticky", window.scrollY > 0);
   });
 };
 
 // Navbar Mobile Animation
 const navSlide = () => {
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav-links');
-  const navLinks = document.querySelectorAll('.nav-links li');
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav-links");
+  const navLinks = document.querySelectorAll(".nav-links li");
 
   // Toggle Nav
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("nav-active");
 
     // Animate Links
     navLinks.forEach((link, index) => {
@@ -29,20 +29,20 @@ const navSlide = () => {
     });
 
     // Burger Animation
-    burger.classList.toggle('toggle');
+    burger.classList.toggle("toggle");
   });
 };
 
 // Animate Fitness Tips Animations on Tap
 const lottieTap = () => {
-  const animation = document.querySelectorAll('.lottie-animation');
-  const mediaQuery = window.matchMedia('(max-width: 800px)');
+  const animation = document.querySelectorAll(".lottie-animation");
+  const mediaQuery = window.matchMedia("(max-width: 800px)");
 
   if (mediaQuery.matches) {
     animation.forEach((lottie) => {
-      lottie.removeAttribute('hover');
-      lottie.removeAttribute('loop');
-      lottie.addEventListener('click', () => {
+      lottie.removeAttribute("hover");
+      lottie.removeAttribute("loop");
+      lottie.addEventListener("click", () => {
         lottie.stop();
         lottie.play();
       });
@@ -53,34 +53,34 @@ const lottieTap = () => {
 // Form Validation
 
 const formVal = () => {
-  const form = document.querySelector('form');
-  const name = document.querySelector('#name');
-  const email = document.querySelector('#email');
-  const error = document.querySelector('.error');
+  const form = document.querySelector("form");
+  const name = document.querySelector("#name");
+  const email = document.querySelector("#email");
+  const error = document.querySelector(".error");
   let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-  name.addEventListener('input', (e) => {
-    name.style.borderBottom = '1px solid green';
+  name.addEventListener("input", () => {
+    name.style.borderBottom = "1px solid green";
   });
 
-  email.addEventListener('input', (e) => {
+  email.addEventListener("input", () => {
     if (email.value.match(pattern)) {
-      email.style.borderBottom = '1px solid green';
+      email.style.borderBottom = "1px solid green";
     }
   });
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener("submit", (e) => {
     let messages = [];
 
-    if (name.value === '' || name.value == null) {
-      messages.push('Name is required');
+    if (name.value === "" || name.value == null) {
+      messages.push("Name is required");
     } else if (!email.value.match(pattern)) {
-      messages.push('Email is invalid');
+      messages.push("Email is invalid");
     }
 
     if (messages.length > 0) {
       e.preventDefault();
-      error.innerText = messages.join(', ');
+      error.innerText = messages.join(", ");
     }
   });
 };
@@ -89,7 +89,7 @@ const formVal = () => {
 const phoneFormat = () => {
   const formatPhoneNumber = (value) => {
     if (!value) return value;
-    const phoneNumber = value.replace(/[^\d]/g, '');
+    const phoneNumber = value.replace(/[^\d]/g, "");
     const phoneNumberLength = phoneNumber.length;
     if (phoneNumberLength < 4) return phoneNumber;
     if (phoneNumberLength < 7) {
@@ -101,16 +101,16 @@ const phoneFormat = () => {
     )}-${phoneNumber.slice(6, 10)}`;
   };
   const phoneNumberFormatter = () => {
-    const phone = document.querySelector('#phone');
+    const phone = document.querySelector("#phone");
     const formattedInputValue = formatPhoneNumber(phone.value);
     phone.value = formattedInputValue;
   };
-  phone.addEventListener('input', phoneNumberFormatter);
+  phone.addEventListener("input", phoneNumberFormatter);
 };
 
 // Carousel Controls
 const swiperFunc = () => {
-  const swiper = new Swiper('.mySwiper', {
+  const swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     rewind: true,
     autoplay: {
@@ -118,12 +118,12 @@ const swiperFunc = () => {
       disableOnInteraction: false,
     },
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: '.fa-chevron-right',
-      prevEl: '.fa-chevron-left',
+      nextEl: ".fa-chevron-right",
+      prevEl: ".fa-chevron-left",
     },
     breakpoints: {
       800: {
@@ -137,47 +137,47 @@ const swiperFunc = () => {
     },
   });
 
-  const testimonialSlider = new Swiper('.testimonial-swiper', {
+  const testimonialSlider = new Swiper(".testimonial-swiper", {
     slidesPerView: 1,
     rewind: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: false,
     },
     navigation: {
-      nextEl: '.fa-chevron-right',
-      prevEl: '.fa-chevron-left',
+      nextEl: ".fa-chevron-right",
+      prevEl: ".fa-chevron-left",
     },
   });
 };
 
 // Modal Functionality
 const modalFunction = () => {
-  const testimonials = document.querySelectorAll('.swiper-slide--testimonials');
-  const modal = document.querySelector('.modal');
-  const modalText = document.querySelector('.modal-text');
-  const modalAuthor = document.querySelector('.modal-author');
-  const closeModal = document.querySelector('.close-modal');
+  const testimonials = document.querySelectorAll(".swiper-slide--testimonials");
+  const modal = document.querySelector(".modal");
+  const modalText = document.querySelector(".modal-text");
+  const modalAuthor = document.querySelector(".modal-author");
+  const closeModal = document.querySelector(".close-modal");
 
   if (testimonials) {
     testimonials.forEach((testimonial) => {
       if (testimonial.children[1].innerText.length >= 600) {
-        testimonial.children[1].classList.add('testimonial--long');
+        testimonial.children[1].classList.add("testimonial--long");
       }
-      testimonial.addEventListener('click', (e) => {
-        if (e.target.classList[1] === 'testimonial--long') {
+      testimonial.addEventListener("click", (e) => {
+        if (e.target.classList[1] === "testimonial--long") {
           modalText.innerText = e.target.innerText;
           modalAuthor.innerText =
             e.target.parentElement.lastElementChild.innerText;
           modal.showModal();
-          modal.style.display = 'flex';
+          modal.style.display = "flex";
         }
       });
 
-      modal.addEventListener('click', (e) => {
-        if (e.target.classList[2] === 'close-modal') {
+      modal.addEventListener("click", (e) => {
+        if (e.target.classList[2] === "close-modal") {
           modal.close();
-          modal.style.display = 'none';
+          modal.style.display = "none";
         }
       });
     });
