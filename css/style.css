@@ -149,6 +149,9 @@ input:-webkit-autofill:focus {
 .primary-header.sticky {
   height: 4rem;
   background: hsla(var(--nav-clr-dark), 0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid;
+  border-color: color-mix(in oklab, hsl(var(--nav-clr-dark)), white 25%);
 }
 
 .navbar-logo a i {
